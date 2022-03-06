@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-image: url(./images/background.jpg);
+        background-size: cover;
+        color: #fff;
+        line-height: 1.8;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        margin-top: 50px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px 25px;
+        color: #333;
+    
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      
+        background: #4c49f0;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .form-wrap button:hover {
+        background: #3534a9;
+      }
+
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      footer a {
+        color: #3534a9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1><strong>Login</strong></h1>
+        <p>Entre na sua conta abaixo</p>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit" class="btn">Entrar</button>
+        </form>
+      </div>
+      <footer>
+        <p>Não possui uma conta? <a href="#"><strong>Cadastre-se aqui</strong></a></p>
+      </footer>
+    </div>
+  </body>
+</html>
