@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login Form</title>
+    <title>Register Form</title>
     <link
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
@@ -86,7 +86,7 @@
       }
 
       footer {
-        text-align: center;
+        text-align: justify;
         margin-top: 10px;
       }
 
@@ -98,9 +98,13 @@
   <body>
     <div id="container">
       <div class="form-wrap">
-        <h1><strong>Login</strong></h1>
-        <p>Entre na sua conta abaixo</p>
+        <h1><strong>Cadastro</strong></h1>
+        <p>Registre sua conta abaixo</p>
         <form>
+          <div class="form-group">
+            <label for="first-name">Nome completo</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" />
@@ -109,11 +113,20 @@
             <label for="password">Senha</label>
             <input type="password" name="password" id="password" />
           </div>
-          <button type="submit" class="btn">Entrar</button>
+          <div class="form-group">
+            <label for="password">Confirme sua senha</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit" class="btn">Registrar</button>
+          <p class="bottom-text">
+            Clicando no botão de Registrar, você estará concordando com os nossos
+            <a href="#">Termos & Condições</a> e a
+            <a href="#">Política de Privacidade</a>
+            </p>
         </form>
       </div>
       <footer>
-        <p>Não possui uma conta? <a href="./register.html"><strong>Cadastre-se aqui</strong></a></p>
+       <p>Já possui uma conta? <a href="./login.html">Entre aqui</a></p>
       </footer>
     </div>
   </body>
